@@ -256,7 +256,10 @@ div {
 .contact-btn-wrapper {
   position: fixed;
   bottom: 0;
-  left: 20%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translate(0, -20%);
 }
 
 .contact-card {
@@ -283,7 +286,7 @@ div {
   height: 30px;
   font-weight: 700;
   border-radius: 3.5px;
-  border: 1px solid buttonface;
+  border: 1px solid #F0F0F0;
 }
 
 @media (max-width: 768px) {
