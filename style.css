@@ -1,0 +1,418 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+div {
+  overflow: hidden;
+}
+
+
+.header {
+  padding: 30px 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoSection,
+.navSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.logoSection {
+  gap: 10px;
+  width: 200px;
+  height: 50px;
+  padding-left: 30px;
+}
+
+.navSection {
+  gap: 40px;
+  width: 350px;
+  height: 30px;
+  justify-content: flex-end;
+}
+
+
+.logoSection>p {
+  display: inline;
+  font-weight: 400;
+  font-size: 24px;
+  color: #969696;
+}
+
+.navSection>p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #737373;
+}
+
+.navSection .material-symbols-outlined {
+  display: none;
+}
+
+.Logo {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUsSection,
+.ourTeamSection {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 60px 30px;
+  gap: 14px;
+  height: 298px;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUsSection>p:first-child,
+.ourTeamSection .h2-headerWings {
+  width: 300px;
+  height: 76px;
+  font-size: 60px;
+  color: #5D5D5D;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ourTeamSection .h2-headerWings {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.ourTeamSection .h2-headerWings p {
+  width: 200px;
+  font-size: 40px;
+  color: #969696;
+}
+
+.wingLeft img,
+.wingRight img {
+  width: 40px;
+  height: 30px;
+}
+
+.aboutUsSection>p:last-child,
+.ourTeamSection>p:last-child {
+  color: #404040;
+  padding: 0px 60px;
+}
+
+.portfolioSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.portfolioItem {
+  padding: 0px;
+  text-align: left;
+  display: grid;
+  gap: 10px;
+  align-items: center;
+}
+
+.portfolioItem .imageHolder,
+.portfolioItem .imageHolder img {
+  width: 300px;
+  height: 180px;
+}
+
+
+
+.portfolioDescription>p:first-child {
+  font-weight: bold;
+}
+
+.teamSection {
+  text-align: left;
+  padding: 10px 0 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  align-items: center;
+
+}
+
+.chevronRight img,
+.chevronLeft img {
+  width: 15px;
+  height: 24px;
+}
+
+.teammateItem .imageHolder img {
+  width: 163.5px;
+  height: 163px;
+}
+
+.teammateItem .Socials img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+}
+
+.teammateDescription,
+.Frame1 .h2-headerWings p,
+.portfolioDescription>p:first-child {
+  font-size: 20px;
+}
+
+.teammateDescription {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.teammateItem {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.footer {
+  height: 500px;
+  width: 100%;
+  font-size: 12px;
+  background-color: black;
+  color: #918e8e;
+}
+
+.socialsList {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialItem img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.socialItem {
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Frame1 {
+  line-height: normal;
+  padding-top: 30px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.Frame1 .h2-headerWings {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr 3fr;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.Frame1 .h2-headerWings>p {
+  margin: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    padding: 10px 30px;
+    height: 70px;
+  }
+
+  .navSection {
+    width: 16px;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+
+  .navSection .material-symbols-outlined {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .portfolioSection {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .portfolioItem {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+
+  .portfolioItem .imageHolder,
+  .portfolioItem .imageHolder img {
+    width: 200px;
+    height: 140px;
+  }
+
+  .teammateItem .imageHolder img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .teamSection {
+    grid-template-columns: none;
+    grid-template-areas:
+      "chev1 team1 team2 chev2"
+      "chev1 team3 team4 chev2";
+  }
+
+  .chevronLeft {
+    grid-area: chev1;
+  }
+
+  .chevronRight {
+    grid-area: chev2;
+  }
+
+  .team1 {
+    grid-area: team1;
+  }
+
+  .team2 {
+    grid-area: team2;
+  }
+
+  .team3 {
+    grid-area: team3;
+  }
+
+  .team4 {
+    grid-area: team4;
+  }
+
+
+}
+
+
+@media (max-width: 360px) {
+
+
+  .header {
+    padding: 10px 16px;
+    gap: 33px;
+    height: 70px;
+  }
+
+  .navSection {
+    width: 16px;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+
+  .aboutUsSection>p:last-child {
+    padding: 0px;
+  }
+
+  .portfolioSection {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .portfolioItem {
+    grid-template-columns: none;
+    text-align: center;
+  }
+
+  .portfolioItem .imageHolder,
+  .portfolioItem .imageHolder img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .ourTeamSection {
+    padding: 0px;
+  }
+
+  .chevronLeft,
+  .chevronRight {
+    display: none;
+  }
+
+  .teamSection {
+    grid-template-columns: none;
+    grid-template-areas: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer {
+    height: 1100px;
+  }
+
+  .socialsList {
+    flex-flow: column wrap;
+    align-content: center;
+    justify-items: center;
+    align-items: flex-start;
+  }
+
+  .Frame1 {
+    grid-template-columns: none;
+  }
+
+  .teammateItem .imageHolder img {
+    width: 250px;
+    height: 250px;
+  }
+}
