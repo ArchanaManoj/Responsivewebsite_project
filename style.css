@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   text-align: center;
 }
@@ -9,7 +9,6 @@ body {
 div {
   overflow: hidden;
 }
-
 
 .header {
   padding: 30px 30px;
@@ -42,15 +41,14 @@ div {
   justify-content: flex-end;
 }
 
-
-.logoSection>p {
+.logoSection > p {
   display: inline;
   font-weight: 400;
   font-size: 24px;
   color: #969696;
 }
 
-.navSection>p {
+.navSection > p {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -86,12 +84,12 @@ div {
   justify-content: center;
 }
 
-.aboutUsSection>p:first-child,
+.aboutUsSection > p:first-child,
 .ourTeamSection .h2-headerWings {
   width: 300px;
   height: 76px;
   font-size: 60px;
-  color: #5D5D5D;
+  color: #5d5d5d;
   padding: 0px;
   margin: 0px;
 }
@@ -116,8 +114,8 @@ div {
   height: 30px;
 }
 
-.aboutUsSection>p:last-child,
-.ourTeamSection>p:last-child {
+.aboutUsSection > p:last-child,
+.ourTeamSection > p:last-child {
   color: #404040;
   padding: 0px 60px;
 }
@@ -146,9 +144,7 @@ div {
   height: 180px;
 }
 
-
-
-.portfolioDescription>p:first-child {
+.portfolioDescription > p:first-child {
   font-weight: bold;
 }
 
@@ -161,7 +157,6 @@ div {
   justify-items: center;
   align-items: center;
   align-items: center;
-
 }
 
 .chevronRight img,
@@ -183,7 +178,7 @@ div {
 
 .teammateDescription,
 .Frame1 .h2-headerWings p,
-.portfolioDescription>p:first-child {
+.portfolioDescription > p:first-child {
   font-size: 20px;
 }
 
@@ -236,7 +231,6 @@ div {
   justify-content: center;
 }
 
-
 .Frame1 {
   line-height: normal;
   padding-top: 30px;
@@ -253,14 +247,46 @@ div {
   justify-content: center;
 }
 
-.Frame1 .h2-headerWings>p {
+.Frame1 .h2-headerWings > p {
   margin: 0px;
   color: white;
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+.contact-btn-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 20%;
+}
 
+.contact-card {
+  background: linear-gradient(to bottom, rgb(254, 212, 8), rgb(255, 188, 3)),
+    linear-gradient(to right, rgb(253, 196, 1), rgb(252, 183, 0));
+  width: 720px;
+  height: 70px;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  border-radius: 3px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.contact-card img {
+  width: 70px;
+}
+
+.contact-btn {
+  height: 30px;
+  font-weight: 700;
+  border-radius: 3.5px;
+  border: 1px solid buttonface;
+}
+
+@media (max-width: 768px) {
   .header {
     padding: 10px 30px;
     height: 70px;
@@ -336,14 +362,9 @@ div {
   .team4 {
     grid-area: team4;
   }
-
-
 }
 
-
 @media (max-width: 360px) {
-
-
   .header {
     padding: 10px 16px;
     gap: 33px;
@@ -356,7 +377,7 @@ div {
     gap: 30px;
   }
 
-  .aboutUsSection>p:last-child {
+  .aboutUsSection > p:last-child {
     padding: 0px;
   }
 
